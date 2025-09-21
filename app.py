@@ -2,6 +2,8 @@
 # A simple calculator with add and subtract functions
 from fastapi import FastAPI
 import uvicorn
+import requests
+import json
 
 app = FastAPI()
 
@@ -35,4 +37,5 @@ import requests
 response = requests.get("http://localhost:9321/add", params={"a": 5, "b": 3})
 print(response.json())
 '''
+
 
